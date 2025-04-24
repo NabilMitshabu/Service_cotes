@@ -1,6 +1,6 @@
 {
     "functions": {
-      "*.php": {
+      "api_cotes.php": {
         "runtime": "vercel-php@0.5.0"
       }
     },

@@ -1,6 +1,5 @@
 <?php
-header("Content-Type: application/json");
-echo json_encode(["message" => "Hello from api_cotes"]);
+
 
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");

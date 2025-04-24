@@ -1,21 +1,17 @@
 {
     "functions": {
-      "api_cotes.php": {
+      "api/*.php": {
         "runtime": "vercel-php@0.5.0"
       }
     },
     "routes": [
       {
         "src": "/api/(.*)",
-        "dest": "/api_cotes.php",
+        "dest": "/api/$1.php",
         "methods": ["GET", "POST"],
         "headers": {
           "Content-Type": "application/json"
         }
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/api_cotes.php"
       }
     ]
   }
